@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gotham', sans-serif;
+    color: white;
+}
+
+nav{
+    background-color: rgb(10, 25, 49);
+    line-height: 60px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#logo{
+    text-transform: uppercase;
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(255, 201, 71);
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li{
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+nav ul li a.active{
+    color: rgb(255, 201, 71);
+    border-bottom: 5px solid;
+    border-color: rgb(255, 201, 71);
+}
+
+nav ul li a:hover{
+    color: rgb(255, 201, 71);
+}
+
+#icon{
+    display: none;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    background-color: rgb(10, 25, 49);
+    width: 100%;
+    height: 70%;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+
+.data h1{
+    padding: 70px 0px 70px 70px;
+    /* background-color: blueviolet; */
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+
+.data h1 span{
+    font-style: italic;
+    color: rgb(255, 201, 71);
+    font-size: 40px;
+    border-bottom: solid 5px;
+    border-color: tomato;
+}
+
+.quotes{
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.quotes p{
+    color: black;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.elon{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    #logo{
+        padding-left: 20px;
+    }
+
+    nav ul{
+        margin-right: 0;
+    }
+
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .data h1{
+        text-align: center;
+        padding: 5%;
+    }
+
+    .quotes{
+        margin: 30px 50px;
+        text-align: center;
+    }
+
+    .quotes p{
+        padding: 20px 10px;
+    }
+
+    .elon{
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+        padding-left: 30px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #icon{
+        display: inline-block;
+        float: right;
+        font-size: 24px;
+        margin-right: 20px;
+    }
+}
