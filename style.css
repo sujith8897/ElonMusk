@@ -15,7 +15,7 @@ nav{
     z-index: 100;
 }
 
-#logo{
+#logo a{
     text-transform: uppercase;
     padding-left: 60px;
     font-size: 22px;
@@ -103,7 +103,7 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width: 1024px) {
-    #logo{
+    #logo a{
         padding-left: 20px;
     }
 
@@ -137,9 +137,6 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    #logo{
-        padding-left: 30px;
-    }
 
     nav ul{
         position: fixed;
