@@ -124,7 +124,6 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 4px;
     margin-bottom: 10px;
-    border: 2px solid rgb(255, 201, 71);
 }
 
 .quotes p{
@@ -168,7 +167,7 @@ nav ul li a:hover{
     }
 
     .quotes{
-        margin: 30px 50px;
+        /* margin: 30px 50px; */
         text-align: center;
     }
 
@@ -178,6 +177,10 @@ nav ul li a:hover{
 
     .elon{
         float: none;
+    }
+
+    .rotate{
+        transform: rotate3d(2, -2, 0, 20deg);
     }
 
 }
@@ -212,4 +215,5 @@ nav ul li a:hover{
         font-size: 24px;
         margin-right: 20px;
     }
+
 }
