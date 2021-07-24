@@ -19,10 +19,11 @@
         <label id="logo"><a href="index.html">Elon Musk</a></label>
         <label id="icon"><i class="fa fa-align-justify"></i></label>
         <ul>
-            <li><a href="#" id="tesla" onclick="myFunction(this)">Tesla</a></li>
-            <li><a href="#" id="spacex"  onclick="myFunction(this)">SpaceX</a></li>
-            <li><a href="#" id="boring"  onclick="myFunction(this)">Boring</a></li>
-            <li><a href="#" id="neuralink"  onclick="myFunction(this)">Neuralink</a></li>
+            <li onclick="myFunction('tesla')"><a href="#teslaDiv" class="nav-links" id="tesla">Tesla</a></li>
+            <li onclick="myFunction('spacex')"><a href="#spacexDiv" class="nav-links" id="spacex">SpaceX</a></li>
+            <li onclick="myFunction('boring')"><a href="#boringDiv" class="nav-links" id="boring">Boring</a></li>
+            <li onclick="myFunction('neuralink')"><a href="#neuralinkDiv" class="nav-links" id="neuralink">Neuralink</a>
+            </li>
         </ul>
 
     </nav>
@@ -74,6 +75,61 @@
 
         </div>
         <img src="images/e.png" alt="" class="elon">
+
+    </div>
+
+    <div id="teslaDiv" class="companyDiv">
+        <div class="companyData">
+            <h2>Tesla Motors</h2>
+            <p>Tesla was founded in 2003 by a group of engineers who wanted to prove that people didn’t need to
+                compromise to drive electric – that electric vehicles can be better, quicker and more fun to drive than
+                gasoline cars. Today, Tesla builds not only all-electric vehicles but also infinitely scalable clean
+                energy generation and storage products. Tesla believes the faster the world stops relying on fossil
+                fuels and moves towards a zero-emission future, the better.
+            </p>
+        </div>
+
+        <div class="cardsCont">
+            <div class="cards" style="    background: rgba(73,155,234,1);
+            background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);">
+                <h3>Revenue: 31.5bn USD</h3>
+            </div>
+            <div class="cards" style="background: rgb(10,25,49);
+            background: linear-gradient(to right, rgb(10,25,49) 0%, rgb(11, 61, 141) 100%);">
+                <h3>Vechiles Delivered: 185k</h3>
+            </div>
+            <div class="cards" style="background-color: rgb(16,132,120);
+            background: linear-gradient(to right, rgb(16,132,120) 0%, rgb(9, 185, 168) 100%);">
+                <h3>Global Electric Sales: 3m</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="spacexDiv" class="companyDiv">
+        <div class="companyData">
+            <h2>SpaceX</h2>
+            <p>SpaceX, in full Space Exploration Technologies Corporation, American aerospace company founded in 2002
+                that helped usher in the era of commercial spaceflight. It was the first private company to successfully
+                launch and return a spacecraft from Earth orbit and the first to launch a crewed spacecraft and dock it
+                with the International Space Station (ISS). Headquarters are in Hawthorne, California.
+            </p>
+        </div>
+
+        <div class="cardsCont">
+            <div class="cards" style="    background: rgba(73,155,234,1);
+            background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);">
+                <h3>Valuation: 36bn USD</h3>
+            </div>
+            <div class="cards" style="background: rgb(10,25,49);
+            background: linear-gradient(to right, rgb(10,25,49) 0%, rgb(11, 61, 141) 100%);">
+                <h3>Total Launches: 127</h3>
+            </div>
+            <div class="cards" style="background-color: rgb(16,132,120);
+            background: linear-gradient(to right, rgb(16,132,120) 0%, rgb(9, 185, 168) 100%);">
+                <h3>Total Landings: 89</h3>
+            </div>
+        </div>
 
     </div>
 

@@ -4,7 +4,8 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Gotham',sans-serif;
-    color: white;
+    color: black;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -40,6 +41,7 @@ nav ul li{
 nav ul li a{
     font-weight: 500;
     padding-bottom: 5px;
+    color: white;
 }
 
 nav ul li a.active{
@@ -56,12 +58,16 @@ nav ul li a:hover{
     display: none;
 }
 
+#icon i{
+    color: white;
+}
+
 .container{
     /* position: relative; */
     display: flex;
     background-color: rgb(10, 25, 49);
     width: 100%;
-    padding-top: 40px;
+    padding-top: 60px;
     overflow: hidden;
 }
 
@@ -71,6 +77,7 @@ nav ul li a:hover{
     /* background-color: blueviolet; */
     /* text-transform: capitalize; */
     text-align: center;
+    color: white;
 }
 
 .data h1 span{
@@ -148,38 +155,84 @@ nav ul li a:hover{
     float: right;
 }
 
-.img{
-    width: 50%;
-    margin: 0 25%;
-    height: auto;
+.companyDiv{
+    display: flex;
+    padding: 100px;
+    /* background: url(images/e2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: black;
 }
 
 
-.flex{
-   display: flex;
-   flex-direction: column;
-   /* background-color: blanchedalmond; */
-   margin-top: 50px;
+.companyData{
+    width: 500px;
+    padding: 30px;
+    border: 2px solid rgb(184, 184, 184);
+    margin-right: 20px;
+    transform: scale(0.9);
+    transition: all 0.2s ease-out;
 }
 
+.companyData:hover {
+    transition: all 0.2s ease-in;
+    transform: scale(1);
+  }
 
-.carData{
-    padding: 10px 30px;
-    background-color: rgb(10, 25, 49);
-    border-radius: 4px;
+.companyDiv:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.companyData h2{
+    padding-bottom: 10px;
     text-align: center;
-    margin: 0 25%;
-}
-
-.carData h3{
-    color: rgb(255, 201, 71);
-    margin: 10px 0;
-}
-
-.carData p{
     color: white;
 }
 
+.companyData p{
+    color:whitesmoke;
+}
+
+.cardsCont{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cards{
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-radius: 8px;
+    filter: blur(3px);
+}
+
+.cards:hover{
+    filter: blur(0px);
+}
+.cards h3{
+    color: white;
+}
+
+#teslaDiv .companyData{
+    background:     linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),url('images/elon2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#spacexDiv .companyData{
+    background:     linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),url('images/e2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .modal {
     display: none; /* Hidden by default */
@@ -237,10 +290,10 @@ nav ul li a:hover{
 
   @keyframes rocket {
     0%{
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
     100%{
-        transform: translateY(-150%);
+        transform: translateY(-200%);
     }
   }
 
@@ -328,4 +381,25 @@ nav ul li a:hover{
         margin: 0 5px;
     }
 
+    .companyDiv{
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .companyDiv:nth-child(even){
+        flex-direction: column;
+    }
+    .companyData{
+        margin: 0;
+        width: 100%;
+        transform: scale(0.7);
+    }
+    .companyData:hover{
+        transform: scale(0.8);
+    }
+    .cardsCont{
+        width: 70%;
+    }
 }
