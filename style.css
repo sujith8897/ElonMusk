@@ -219,7 +219,7 @@ nav ul li a:hover{
     background:     linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
-      ),url('images/elon2.jpg');
+      ),url('images/car.jfif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -229,9 +229,53 @@ nav ul li a:hover{
     background:     linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
-      ),url('images/e2.jpg');
+      ),url('images/ee.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+#boringDiv .companyData{
+    background:     linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),url('images/b1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#neuralinkDiv .companyData{
+    background:     linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),url('images/n1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer{
+    background-color: rgb(10, 25, 49);
+    display: flex;
+    padding: 50px;
+    text-align: center;
+}
+
+.about,.links{
+    width: 50%;
+}
+
+#footer h3{
+    color: rgb(255, 201, 71);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#footer a, #footer p{
+    color: white;
+}
+
+#footer li{
+    margin-bottom: 10px;
 }
 
 .modal {
@@ -297,6 +341,29 @@ nav ul li a:hover{
     }
   }
 
+  @keyframes boring {
+      0%{
+          transform: scale(10);
+      }
+      100%{
+          transform: scale(1);
+      }
+  }
+
+  @keyframes neuralink {
+      0%{
+          transform: rotateY(0deg);
+      }
+      100%{
+          transform: rotateY(360deg);
+      }
+  }
+
+
+
+
+
+
 
 /* Tab View */
 
@@ -334,6 +401,27 @@ nav ul li a:hover{
 
     .rotate{
         transform: rotate3d(2, -2, 0, 20deg);
+    }
+    .companyDiv{
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .companyDiv:nth-child(even){
+        flex-direction: column;
+    }
+    .companyData{
+        margin: 0;
+        width: 100%;
+        transform: scale(0.9);
+    }
+    .companyData:hover{
+        transform: scale(1);
+    }
+    .cardsCont{
+        width: 70%;
     }
 
 }
@@ -382,24 +470,26 @@ nav ul li a:hover{
     }
 
     .companyDiv{
-        overflow: hidden;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-    }
-    .companyDiv:nth-child(even){
-        flex-direction: column;
+        padding: 40px 0;
     }
     .companyData{
-        margin: 0;
-        width: 100%;
         transform: scale(0.7);
     }
+
     .companyData:hover{
         transform: scale(0.8);
     }
-    .cardsCont{
-        width: 70%;
+
+    #footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+    }
+
+    .about,.links{
+        width: 100%;
+        padding:0px;
+        margin-bottom: 30px;
     }
 }

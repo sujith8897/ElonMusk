@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="images/fav1.png" type="image/x-icon">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
         <label id="logo"><a href="index.html">Elon Musk</a></label>
         <label id="icon"><i class="fa fa-align-justify"></i></label>
         <ul>
-            <li onclick="myFunction('tesla')"><a href="#teslaDiv" class="nav-links" id="tesla">Tesla</a></li>
             <li onclick="myFunction('spacex')"><a href="#spacexDiv" class="nav-links" id="spacex">SpaceX</a></li>
+            <li onclick="myFunction('tesla')"><a href="#teslaDiv" class="nav-links" id="tesla">Tesla</a></li>
             <li onclick="myFunction('boring')"><a href="#boringDiv" class="nav-links" id="boring">Boring</a></li>
             <li onclick="myFunction('neuralink')"><a href="#neuralinkDiv" class="nav-links" id="neuralink">Neuralink</a>
             </li>
@@ -78,6 +78,33 @@
 
     </div>
 
+    <div id="spacexDiv" class="companyDiv">
+        <div class="companyData">
+            <h2>SpaceX</h2>
+            <p>SpaceX, in full Space Exploration Technologies Corporation, American aerospace company founded in 2002
+                that helped usher in the era of commercial spaceflight. It was the first private company to successfully
+                launch and return a spacecraft from Earth orbit and the first to launch a crewed spacecraft and dock it
+                with the International Space Station (ISS). Headquarters are in Hawthorne, California.
+            </p>
+        </div>
+
+        <div class="cardsCont">
+            <div class="cards" style="    background: rgba(73,155,234,1);
+            background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);">
+                <h3>Valuation: 36bn USD</h3>
+            </div>
+            <div class="cards" style="background: rgb(10,25,49);
+            background: linear-gradient(to right, rgb(10,25,49) 0%, rgb(11, 61, 141) 100%);">
+                <h3>Total Launches: 127</h3>
+            </div>
+            <div class="cards" style="background-color: rgb(16,132,120);
+            background: linear-gradient(to right, rgb(16,132,120) 0%, rgb(9, 185, 168) 100%);">
+                <h3>Total Landings: 89</h3>
+            </div>
+        </div>
+
+    </div>
+
     <div id="teslaDiv" class="companyDiv">
         <div class="companyData">
             <h2>Tesla Motors</h2>
@@ -106,31 +133,84 @@
 
     </div>
 
-    <div id="spacexDiv" class="companyDiv">
+
+    <div id="boringDiv" class="companyDiv">
         <div class="companyData">
-            <h2>SpaceX</h2>
-            <p>SpaceX, in full Space Exploration Technologies Corporation, American aerospace company founded in 2002
-                that helped usher in the era of commercial spaceflight. It was the first private company to successfully
-                launch and return a spacecraft from Earth orbit and the first to launch a crewed spacecraft and dock it
-                with the International Space Station (ISS). Headquarters are in Hawthorne, California.
+            <h2>The Boring Company</h2>
+            <p>The Boring Company creates safe, fast-to-dig, and low-cost transportation, utility, and freight tunnels
+                The mission: solve traffic, enable rapid point-to-point transportation and transform cities.
+                To solve the problem of soul-destroying traffic, roads must go 3D, which means either flying cars or
+                tunnels are needed. Unlike flying cars, tunnels are weatherproof, out of sight, and won't fall on your
+                head.
             </p>
         </div>
 
         <div class="cardsCont">
             <div class="cards" style="    background: rgba(73,155,234,1);
             background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);">
-                <h3>Valuation: 36bn USD</h3>
+                <h3>Valuation: 1bn USD</h3>
             </div>
             <div class="cards" style="background: rgb(10,25,49);
             background: linear-gradient(to right, rgb(10,25,49) 0%, rgb(11, 61, 141) 100%);">
-                <h3>Total Launches: 127</h3>
+                <h3>Assumed Vehcile Speed: 150mph</h3>
             </div>
             <div class="cards" style="background-color: rgb(16,132,120);
             background: linear-gradient(to right, rgb(16,132,120) 0%, rgb(9, 185, 168) 100%);">
-                <h3>Total Landings: 89</h3>
+                <h3>Not-a-Flamethrowers Sold: 20k</h3>
             </div>
         </div>
 
+    </div>
+    <div id="neuralinkDiv" class="companyDiv">
+        <div class="companyData">
+            <h2>Neuralink</h2>
+
+            <p>Neuralink is a team of exceptionally talented people. We are creating the future of brain interfaces:
+                building devices now that will help people with paralysis and inventing new technologies that will
+                expand our abilities, our community, and our world.
+            </p>
+        </div>
+
+        <div class="cardsCont">
+            <div class="cards" style="    background: rgba(73,155,234,1);
+            background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);">
+                <h3>Valuation: 500m USD</h3>
+            </div>
+            <div class="cards" style="background: rgb(10,25,49);
+            background: linear-gradient(to right, rgb(10,25,49) 0%, rgb(11, 61, 141) 100%);">
+                <h3>Channels: 1024</h3>
+            </div>
+            <div class="cards" style="background-color: rgb(16,132,120);
+            background: linear-gradient(to right, rgb(16,132,120) 0%, rgb(9, 185, 168) 100%);">
+                <h3>Tested on monkey <a href="https://www.youtube.com/watch?v=2rXrGH52aoM" target="_blank">(link)</a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="about">
+            <h3>About</h3>
+            <p>This site is developed just for fun and to imporve my skills on web development.<br><br> Thanks for
+                visitng
+                <i class="fa fa-heart" style="color: crimson;"></i>
+            </p>
+            <p style="float:right;color: whitesmoke;font-style: italic;">- <a href="https://www.linkedin.com/in/dusa-sujith/"
+                    target="_blank" style="text-decoration: underline;">Sujith Dusa</a></p>
+            
+                    <br><br>
+            <span id="count" style="color: white; display: none;"></span>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://www.spacex.com/" target="_blank">SpaceX</a></li>
+                <li><a href="https://www.tesla.com/" target="_blank">Tesla</a></li>
+                <li><a href="https://www.boringcompany.com/" target="_blank">Boring</a></li>
+                <li><a href="https://neuralink.com/" target="_blank">Neuralink</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="modal">
@@ -138,9 +218,7 @@
         <img class="modal-content" id="img">
     </div>
 
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>

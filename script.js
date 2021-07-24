@@ -10,50 +10,46 @@ $(document).ready(function(){
         $(this).addClass('active');
       });
 
-    // $('#tesla').on('click',function(){
-    //   $('.modal').css('display','block');
-    //   $('.modal-content').attr('src','images/modely.png');
-    // });
-
-    // $('#spacex').on('click',function(){
-    //   $('.modal').css('display','block');
-    //   $('.modal-content').attr('src','images/spacex.png');
-    // });
-
-    // $('#boring').on('click',function(){
-    //   $('.modal').css('display','block');
-    //   $('.modal-content').attr('src','images/modely.png');
-    // });
-
-    // $('#neuralink').on('click',function(){
-    //   $('.modal').css('display','block');
-    //   $('.modal-content').attr('src','images/modely.png');
-    // });
-
     $('.close').on('click',function(){
       $('.modal').css('display','none');
     }); 
 
-    // $('.nav-links').on('click',function(){
 
-    // });
   });
 
   function myFunction(id ) {
     var timeOut = 0;
     $('.modal').css('display','block');
     if(id=="tesla"){
-      document.getElementById('img').style.animation = "car 5s linear";
+      document.getElementById('img').style.animation = "car 2s linear";
        $('.modal-content').attr('src','images/modely.png');
-      timeOut = 5000;
     } else if(id=="spacex"){
-      document.getElementById('img').style.animation = "rocket 3s linear";
+      document.getElementById('img').style.animation = "rocket 2s linear";
       $('.modal-content').attr('src','images/spacex.png');
-      timeOut = 3000;
+    } else if(id=="neuralink"){
+      document.getElementById('img').style.animation = "neuralink 2s linear";
+      $('.modal-content').attr('src','images/n1.png');
+    } else if(id=="boring"){
+      document.getElementById('img').style.animation = "boring 2s linear";
+      $('.modal-content').attr('src','images/b3.png');
     }
-    console.log(timeOut);
+
+
     $("#icon i").toggleClass("fa-align-justify");
     $("#icon i").toggleClass("fa-close");
     $('nav ul').toggleClass("show");
         
   }
+
+
+  // const countEl = document.getElementById('count');
+  // updateVisitCount();
+
+  // function updateVisitCount(){
+  //   fetch('https://api.countapi.xyz/update/elonmusk.sujith.com/sujith/?amount=1')
+  //         .then(res => res.json())
+  //         .then(res => {
+  //           countEl.innerHTML = res.value;
+  //           console.log('Total Site Visits:',res.value);
+  //         });
+  // }
