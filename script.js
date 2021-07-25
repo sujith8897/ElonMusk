@@ -38,18 +38,20 @@ $(document).ready(function(){
     $("#icon i").toggleClass("fa-align-justify");
     $("#icon i").toggleClass("fa-close");
     $('nav ul').toggleClass("show");
+    $('nav ul li a').removeClass('active'); 
+
         
   }
 
 
-  // const countEl = document.getElementById('count');
-  // updateVisitCount();
+  const countEl = document.getElementById('count');
+  updateVisitCount();
 
-  // function updateVisitCount(){
-  //   fetch('https://api.countapi.xyz/update/elonmusk.sujith.com/sujith/?amount=1')
-  //         .then(res => res.json())
-  //         .then(res => {
-  //           countEl.innerHTML = res.value;
-  //           console.log('Total Site Visits:',res.value);
-  //         });
-  // }
+  function updateVisitCount(){
+    fetch('https://api.countapi.xyz/update/elonmusk.sujith.com/sujith/?amount=1')
+          .then(res => res.json())
+          .then(res => {
+            countEl.innerHTML = res.value;
+            console.log('Total Site Visits:',res.value);
+          });
+  }
